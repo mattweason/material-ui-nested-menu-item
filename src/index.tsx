@@ -162,14 +162,7 @@ const NestedMenuItem = React.forwardRef<
       onMouseLeave={handleMouseLeave}
       onKeyDown={handleKeyDown}
     >
-      <MenuItem
-        {...MenuItemProps}
-        className={clsx(menuItemClasses.root, className)}
-        ref={menuItemRef}
-      >
-        {label}
-        {rightIcon}
-      </MenuItem>
+      {label}
       <Menu
         // Set pointer events to 'none' to prevent the invisible Popover div
         // from capturing events for clicks and hovers
